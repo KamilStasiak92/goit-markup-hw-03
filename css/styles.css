@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1600px;
+}
+
 :root {
     --blue: #2196F3;
     --almost-black: #212121;
@@ -6,6 +12,8 @@
     --white: #fff;
     --dark-white: #ffffff99;
     --dark-background: #2F303A;
+    --team-background: #F5F4FA;
+    --portfolio-background: #e5e5e5;
 }
 
 body {
@@ -21,6 +29,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--black);
+    padding: 32px 0;
 }
 
 .web {
@@ -33,6 +42,25 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style-type: none;
+    display: flex;
+    padding: 24px 0;
+    margin-left: 46.5px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nav-list li {
+    margin: 0 23px;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
 }
 
 .link {
@@ -50,11 +78,13 @@ body {
     font-size: 0.825rem;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    align-items: space-between;
 }
 
 .contact-item {
     text-decoration: none;
     color: var(--grey);
+    margin: 0 25px;
 }
 
 .contact-item:hover,
@@ -73,11 +103,8 @@ body {
 }
 
 footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 1628px;
-    background: var(--dark-background);
+    background-color: var(--dark-background);
+    padding-top: 60px;
 }
 
 .position {
@@ -85,7 +112,12 @@ footer {
     font-size: 0.825rem;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--white)
+    color: var(--white);
+}
+
+address {
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .footer-contact {
@@ -95,6 +127,7 @@ footer {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--dark-white);
+    padding-top: 9px;
 }
 
 .footer-contact:hover,
@@ -104,6 +137,10 @@ footer {
 
 .list-button {
     list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 295px;
+    padding-right: 303px;
 }
 
 .list-button-item {
@@ -113,6 +150,11 @@ footer {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--team-background);
+    padding: 6px 22px;
+
 }
 
 .list-button-item:hover,
@@ -123,6 +165,23 @@ footer {
 
 .projects {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.projects li {
+    background-color: var(--white);
+    border: 1px solid #EEE;
+}
+
+.project-photo {
+    vertical-align: middle;
+}
+
+.photo-sign {
+    padding: 20px 24px;
 }
 
 .projects-item {
@@ -130,6 +189,7 @@ footer {
     font-size: 1.125rem;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-bottom: 4px;
 }
 
 .projects-description {
@@ -144,11 +204,13 @@ footer {
 }
 
 .main-header {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    background: var(--dark-background);
+   background-color: var(--dark-background);
+   text-align: center;
+}
+
+.main-item {
+    text-align: center;
+    padding: 100px 226px 140px;
 }
 
 h1 {
@@ -158,6 +220,7 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    padding-bottom: 30px;
 }
 
 .service {
@@ -170,6 +233,9 @@ h1 {
     cursor: pointer;
     color: var(--white);
     background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 41px 10px 42px;
 }
 
 .description {
@@ -177,6 +243,7 @@ h1 {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 .description-item {
@@ -184,10 +251,19 @@ h1 {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
+    text-align: justify;
 }
 
 .description-list {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    gap: 30px;
+}
+
+.tasks {
+    padding: 0 15px;
 }
 
 .tasks-item {
@@ -195,10 +271,18 @@ h1 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
 }
 
 .tasks-photos {
     list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+.team {
+    background-color: var(--team-background);
 }
 
 .team-item {
@@ -206,10 +290,14 @@ h1 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: -50px;
+    padding-bottom: 50px;
 }
 
 .team-photos {
     list-style-type: none;
+    display: flex;
+    gap: 30px;
 }
 
 .name {
@@ -217,6 +305,9 @@ h1 {
     font-size: 1rem;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .job-position {
@@ -224,4 +315,28 @@ h1 {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--grey);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.photos-border {
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
