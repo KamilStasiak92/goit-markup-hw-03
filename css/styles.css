@@ -134,6 +134,11 @@ address {
     color: var(--blue);
 }
 
+.portfolio-content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .list-button {
     list-style-type: none;
     display: flex;
