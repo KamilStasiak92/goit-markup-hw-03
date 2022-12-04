@@ -282,6 +282,7 @@ address {
 
 .team {
     background-color: var(--team-background);
+    padding-top: 54px;
 }
 
 .team-item {
