@@ -20,6 +20,11 @@ body {
     color: var(--almost-black)
 }
 
+.content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .logo-header {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -53,7 +58,7 @@ body {
     padding: 0 15px;
 }
 
-.nav-list li {
+.nav-list-item {
     margin: 0 23px;
 }
 
@@ -101,7 +106,7 @@ body {
     color: var(--white);
 }
 
-footer {
+.page-bottom {
     background-color: var(--dark-background);
     padding-top: 60px;
 }
@@ -114,7 +119,7 @@ footer {
     color: var(--white);
 }
 
-address {
+.footer-item {
     padding-top: 20px;
     padding-bottom: 60px;
 }
@@ -175,7 +180,7 @@ address {
     padding-top: 30px;
 }
 
-.projects li {
+.projects-item {
     background-color: var(--white);
     border: 1px solid #EEE;
 }
@@ -335,12 +340,7 @@ address {
     margin: 0 auto;
 }
 
-header {
+.page-top {
     background-color: #fff;
     border-bottom: 1px solid #ececec;
-}
-
-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
