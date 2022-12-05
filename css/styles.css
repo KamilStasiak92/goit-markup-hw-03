@@ -25,6 +25,11 @@ body {
     padding-bottom: 94px;
 }
 
+.page-top {
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+}
+
 .logo-header {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -180,7 +185,7 @@ body {
     padding-top: 30px;
 }
 
-.projects-item {
+.projects-list-item {
     background-color: var(--white);
     border: 1px solid #EEE;
 }
@@ -338,9 +343,4 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-}
-
-.page-top {
-    background-color: #fff;
-    border-bottom: 1px solid #ececec;
 }
